@@ -1,0 +1,10 @@
+# Standard
+*.pyc
+/dist/
+/build/
+/*.egg-info
+/*.egg
+**/.DS_Store
+env
+env3
+.vscode/
