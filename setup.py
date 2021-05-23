@@ -14,7 +14,7 @@ TESTS_REQUIRE = ['pytest']
 setuptools.setup(
     name='rtsparty',
     version='0.0.1',
-    description='A simple package for getting frames from rtsp streams.',
+    description='A simple package for getting live frames from rtsp streams.',
     long_description=get_readme(),
     long_description_content_type="text/markdown",
     keywords='rtsp stream python',

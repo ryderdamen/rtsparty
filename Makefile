@@ -10,8 +10,9 @@ publish:
 
 .PHONY: build
 build:
-	@echo "Building Dist..."; \
-	python setup.py sdist bdist_wheel
+	@echo "Building Dist...";
+	@if [ -d "dist" ]; then rm -rf dist; fi
+	@python setup.py sdist bdist_wheel
 
 .PHONY: test
 test:
@@ -20,4 +21,3 @@ test:
 .PHONY: test-local
 test-local:
 	@cd deployment && bash test_local.sh
-	
